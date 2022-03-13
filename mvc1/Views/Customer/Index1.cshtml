@@ -1,0 +1,15 @@
+﻿@model IEnumerable<mvc1.Models.Location>
+<table class= "table table-danger">
+    <tr>
+        <th>Location</th>
+        <th>Details</th>
+    </tr>
+    @foreach(var location in Model)
+            {
+               <tr>
+                     <td>@location.Place</td>
+                     <td>@location.Details</td>
+               </tr>
+             }
+
+</table>
